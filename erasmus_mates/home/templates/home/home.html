@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="/media/css/style.css" />
+   <title>{% block title %}Welcome on Erasmus-mates{% endblock %}</title>
+</head>
+<body>
+<header>Erasmus-mates</header>
+    <nav>
+       {% block nav %}
+       <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'login' %">Login</a></li>
+            <li><a href="{% url 'signin' %">Sign in</a></li>
+       </ul>
+       {% endblock %}
+   </nav>
+   <section id="content">
+       {% block content %}{% endblock %}
+   </section>
+<footer>&copy; Eramus-mates</footer>
+</body>
+</html>
