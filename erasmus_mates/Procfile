@@ -1,0 +1,1 @@
+web: gunicorn erasmus_mates.wsgi --log-file -
